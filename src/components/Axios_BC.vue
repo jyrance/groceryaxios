@@ -8,6 +8,13 @@
             <PSIIndex></PSIIndex>
         
         </div>
+        <div>
+            <Covid/>
+        </div>
+
+        <div class = 'chart'>
+            <Transport/>
+        </div>
         
     </div>
 </template>
@@ -15,10 +22,12 @@
 <script>
 import axiosExample from '../axiosExample.js'
 import PSIIndex from '../PSIIndex.js'
+import Covid from '../Covid'
+import Transport from '../Transport'
 
 export default {
     components:{
-        axiosExample,PSIIndex
+        axiosExample,PSIIndex, Covid, Transport
     }
     
 }
@@ -30,8 +39,8 @@ export default {
     clear:both;
 }
 #chart{
-  height:240px;
-  width:300px;
+  height:600;
+  width:600;
   border-style: solid;
   border-color:rgb(155, 84, 84);
   border-width: 1px;
